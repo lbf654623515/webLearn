@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        div{
+            background-color: aquamarine;
+            width: 80px;
+            height: 400px;
+        }
+        .sp1{
+            background-color: gray;
+            /*添加了行高就能显示顶部边框，为什么，涉及到css的哪个知识点*/
+            line-height: 100px;
+            /* margin: 20px 20px; */
+            /* padding: 10px 10px; */
+            padding: 1px;
+            border: 1px solid red;
+        }
+        .sp2{
+            background-color: rgb(66, 44, 44);
+            /*添加了行高就能显示顶部边框，为什么，涉及到css的哪个知识点*/
+            /* line-height: 100px; */
+            /* margin: 20px 20px; */
+            /* padding: 10px 10px; */
+            padding: 1px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- 为什么span的顶部边框看不见,这一行超过了父元素宽度，不换行 -->
+        <span class="sp1">12335453457567868678678</span>
+        <!-- 为什么下面的超过了父元素，却会自动换行 -->
+        <!-- <span class="sp2">
+            1、为什么行内元素无法设置上下外边距,左右边距却没有问题,上下外边距为什么会脱离盒子模型规则之外。2、为什么span的顶部边框看不见。3、行内元素的宽度超过节点的大小时,貌似行内元素外边距可以超出父元素的范围来,内容却不能出来,这是什么规则。4、行内元素换行时,边框怎么乱七八糟的，毫无规则可言，并不是圈在最外面。
+        </span> -->
+    </div>
+</body>
+</html>
